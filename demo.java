@@ -99,7 +99,7 @@ class student {
         name = scanner.nextLine();
         System.out.print("Enter Register no:");
         regNo = scanner.nextInt();
-        System.out.println("Enter the marks of  " + name + " in Fithe subjects :");
+        System.out.println("Enter the marks of  " + name + " in Five subjects :");
         for (int i = 0; i < 5; i++) {
             int b;
             System.out.print("Subject "+(i+1)+" : ");
