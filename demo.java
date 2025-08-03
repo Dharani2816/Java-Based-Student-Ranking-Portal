@@ -1,4 +1,4 @@
-
+//Program to create a student grade management site
 import java.util.Scanner;
 
 class demo {
@@ -99,16 +99,20 @@ class student {
         name = scanner.nextLine();
         System.out.print("Enter Register no:");
         regNo = scanner.nextInt();
-        System.out.println("Enter the marks of  " + name + " in Five Subjects:");
+        System.out.println("Enter the marks of  " + name + " in Fithe subjects :");
         for (int i = 0; i < 5; i++) {
             int b;
+            System.out.print("Subject "+(i+1)+" : ");
             b = scanner.nextInt();
             if (b >= 0 && b <= 100) {
                 marks[i] = b;
             } else {
-                System.out.println("Enter marks between 0-100:");
+            
+                while(! ((b >= 0 && b <= 100)))
+               { System.out.print("Re enter Enter marks between 0-100:");
                 b = scanner.nextInt();
                 marks[i] = b;
+            }
             }
             total += marks[i];
         }
